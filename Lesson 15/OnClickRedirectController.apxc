@@ -1,0 +1,8 @@
+public with sharing class OnClickRedirectController
+{
+    @AuraEnabled
+    public static Boolean isValidUser() 
+    {
+        return [SELECT UserPermissionsMarketingUser FROM User WHERE Id = :UserInfo.getUserId()].UserPermissionsMarketingUser;
+    }
+}

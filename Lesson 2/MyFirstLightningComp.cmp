@@ -1,0 +1,7 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+{!'Test goes here'}
+{!123}
+{!true}
+<lightning:button label="Submit" 
+                  onclick="{! c.handleClick }" />
+</aura:component>

@@ -1,0 +1,16 @@
+public with sharing class OnClickRedirectController
+{
+    @AuraEnabled
+    public static Boolean isValidUser() 
+    {
+        return [SELECT UserPermissionsMarketingUser FROM User WHERE Id = :UserInfo.getUserId()].UserPermissionsMarketingUser;
+    }
+
+    @AuraEnabled
+    public static Contact currentContact(Id recordId)  
+    {
+        Contact currnet = [select Url__c 
+                          from contact where id =:recordId];
+		return currnet;
+    }
+}

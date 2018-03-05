@@ -1,0 +1,2 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="ShipToReportController">
+</aura:component>

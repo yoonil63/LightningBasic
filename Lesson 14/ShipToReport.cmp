@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="ShipToReportController">
+<aura:attribute name="currentContact" type="Contact" /> 
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <c:ExpandableSection reportType="shipTo" currentContact="{!v.currentContact}" /> 
+    <c:ExpandableSection reportType="soldTo" currentContact="{!v.currentContact}" />
+</aura:component>

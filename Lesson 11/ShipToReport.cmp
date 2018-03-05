@@ -1,0 +1,67 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="ShipToReportController">
+<aura:attribute name="currentContact" type="Contact" /> 
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<h3 class="slds-section__title">
+            <button aria-controls="expando-unique-id" aria-expanded="true" class="slds-button slds-section__title-action">
+                <lightning:icon iconName="utility:chevrondown" size="xx-small" class="slds-button__icon_left"/>
+                <span class="slds-truncate" title="Section Title">Section Title</span>
+            </button>
+        </h3>
+        <div aria-hidden="false" class="slds-section__content" id="expando-unique-id">
+            <!-- demo part -->
+            <div class="slds-grid slds-grid_align-space">
+                <div class="slds-col slds-size_6-of-12 forcePageBlockItemView slds-p-horizontal_medium">
+                    <div class="slds-form-element" >
+                        <span  class="slds-form-element__label">Product Mix</span  >
+                        <div class="slds-form-element__control slds-grid itemBody">
+                            <div class="slds-form-element__static slds-grow slds-form-element_separator">
+                                <aura:unescapedHtml value="{!v.currentContact.Product_Mix_Report__c}"></aura:unescapedHtml>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="slds-form-element" >
+                        <span  class="slds-form-element__label">Product Mix Report</span  >
+                        <div class="slds-form-element__control slds-grid itemBody">
+                            <div class="slds-form-element__static slds-grow slds-form-element_separator">
+                                <aura:unescapedHtml value="{!v.currentContact.Product_Mix_Report__c}"></aura:unescapedHtml>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-form-element" >
+                        <span  class="slds-form-element__label">Product Mix Report</span  >
+                        <div class="slds-form-element__control slds-grid itemBody">
+                            <div class="slds-form-element__static slds-grow slds-form-element_separator">
+                                <aura:unescapedHtml value="{!v.currentContact.Product_Mix_Report__c}"></aura:unescapedHtml>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_6-of-12  forcePageBlockItemView slds-p-horizontal_medium">
+                    <div class="slds-form-element" >
+                        <span  class="slds-form-element__label">Product Mix Report</span  >
+                        <div class="slds-form-element__control slds-grid itemBody">
+                            <div class="slds-form-element__static slds-grow slds-form-element_separator">
+                                <aura:unescapedHtml value="{!v.currentContact.Product_Mix_Report__c}"></aura:unescapedHtml>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-form-element" >
+                        <span  class="slds-form-element__label">Product Mix Report</span  >
+                        <div class="slds-form-element__control slds-grid itemBody">
+                            <div class="slds-form-element__static slds-grow slds-form-element_separator">
+                                <aura:unescapedHtml value="{!v.currentContact.Product_Mix_Report__c}"></aura:unescapedHtml>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-form-element" >
+                        <span  class="slds-form-element__label">Product Mix Report</span  >
+                        <div class="slds-form-element__control slds-grid itemBody">
+                            <div class="slds-form-element__static slds-grow slds-form-element_separator">
+                                <aura:unescapedHtml value="{!v.currentContact.Product_Mix_Report__c}"></aura:unescapedHtml>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+</aura:component>

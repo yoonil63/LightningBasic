@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="OnClickRedirectController">
+<aura:attribute name="isValidUser" type="Boolean"/> 
+<aura:attribute name="currentContact" type="Contact" /> 
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<aura:if isTrue="{!!v.isActiveUser}">
+ <a href="{!v.currentContact.Url__c}" target="_blank">Click</a>
+ </aura:if>
+</aura:component>

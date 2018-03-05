@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="ShipToReportController">
+<aura:attribute name="currentContact" type="Contact" /> 
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+{!v.currentContact.Product_Mix_Report__c}
+</aura:component>
