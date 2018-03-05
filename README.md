@@ -1,2 +1,2 @@
-# LightningDevIntro
-A sample Albums Database application written for a training exercise.
+# Lightning Basic Intro
+Written for a training exercise.
