@@ -1,0 +1,1 @@
+HYPERLINK("/apex/ProductMix?Id=" & Id & "&accountType=soldto", "Link", "_blank")
