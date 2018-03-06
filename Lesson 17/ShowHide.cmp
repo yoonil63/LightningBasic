@@ -1,0 +1,29 @@
+<aura:component implements="force:appHostable" >
+    <aura:attribute name="toggleCheckBox" type="boolean" default="false" />
+    <aura:attribute name="myCheckBox" type="boolean" default="false" />
+    <aura:attribute name="showText" type="Boolean" default="true"/>
+ 
+    <div class="slds">
+        <div class="slds-page-header">
+            <p class="slds-page-header__title" title="{!'Show Hide'}">Show Hide</p>
+        </div>
+    </div>
+    <lightning:layout horizontalAlign="space">
+        <lightning:layoutItem padding="around-small" class="selectCheckbox">
+            <lightning:input name="test" label="myCheck" variant="label-hidden" onchange="{!c.showSubcom}" type="checkbox" value="{!v.myCheckBox}" checked="{!v.myCheckBox}"/>          
+            <aura:if isTrue="{!v.toggleCheckBox}">
+                <div class="mySubComp">
+                    My SubComponent
+                </div>
+            </aura:if>  
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="around-small" class="selectCheckbox">
+<lightning:button variant="brand" label="Submit" onclick="{! c.handleClick }" />
+            <aura:if isTrue="{!v.showText}">
+                <div class="myText">
+                    My Text
+                </div>
+            </aura:if>  
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>
